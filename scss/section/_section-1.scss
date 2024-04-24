@@ -1,0 +1,115 @@
+.my_page{
+    width: 100%;
+    height: 1022px;
+    background-image: url("../img/bg-section/left.jpg");
+    display: flex;
+}
+.my_page__left{
+    width: 397px;
+    height: 496px;
+    // background-color: red;
+    margin-left: 130px;
+    margin-top: 150px;
+    animation: moveRight 0.7s ease forwards;
+}
+@keyframes moveRight {
+    from {
+        transform: translateX(-400px);
+        opacity: 0.1;
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.my_page__right{
+    width: 640px;
+    height: 496px;
+    background-image: url("../img/bg-section/right.jpg");
+    background-size: cover;
+    margin-left: 290px;
+    margin-top: 80px;
+    animation: moveLeft 0.7s ease forwards;
+}
+
+@keyframes moveLeft {
+    from {
+        transform: translateX(400px);
+        opacity: 0.1;
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+.my_page__text{
+    color: $null-1;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.my_page__h1{
+    font-size: 46px;
+    color: $null-1;
+    line-height: 0.5;
+
+}
+.design{
+    color: $yellow;
+}
+@media only screen and (max-width: 700px) {
+    .my_page__text{
+        position: relative;
+        top: -150px;
+    }
+    .award{
+        margin-top: -130px;
+        line-height: 1.1;
+        margin-left: -45px;
+        font-size: 30px;
+    }
+    .design{
+        line-height: 1.1;
+        margin-left: -45px;
+        font-size: 30px;
+    }
+    .mp_page__freepik{
+        margin-left: -30px;
+
+    }
+    .my_page__btn{
+        position: relative;
+        left: -45px;
+    }
+}
+
+
+.mp_page__freepik{
+    font: 16px "Open Sans"sans-serif;
+    color: $null-1;
+    letter-spacing: 2px;
+    a{
+        text-decoration: none;
+        color: $null-1;
+        border-bottom: 1.5px solid $null-1;
+    }
+    a:hover{
+        border-bottom: 1.5px solid $yellow;
+    }
+}
+.my_page__btn{
+    width: 204px;
+    height: 65.3px;
+    color: $bf-fff;
+    background-color: $null;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    font-family: "Open sans"sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 15px;
+}
+.my_page__btn:hover{
+    background-color: $yellow;
+}

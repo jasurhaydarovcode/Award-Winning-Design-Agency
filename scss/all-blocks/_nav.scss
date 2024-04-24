@@ -1,0 +1,78 @@
+// !=============== NAVBAR ===============
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    background-color: $null;
+}
+.logo{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.fa-bars{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 85%;
+    position: relative;
+    top: -10px;
+}
+.fa-bars:hover{
+    color: $yellow;
+}
+
+@media only screen and (max-width: 600px) {
+    .fa-bars{
+        position: relative;
+        top: -40px;
+    }    
+}
+
+
+
+// !===Burger js=====
+#list {
+    display: none;
+    position: fixed;
+    z-index: 111;
+}
+
+.right-burger-menu {
+    /* background-color: black; */
+    background: rgba(0, 0, 0, 0.956);
+    width: 250px;
+    height: 715px;
+    margin-left: -42px;
+    margin-top: -92px;
+    animation-name: home-go;
+    animation-duration: 0.7s;
+}
+
+@keyframes home-go {
+    0% {
+        margin-left: -182px;
+    }
+    100% {
+        margin-left: -41px;
+    }
+}
+.home {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: Open Sans, sans-serif;
+    /* margin-top: 300px; */
+    position: relative;
+    top: 120px;
+    left: 90px;
+  }
+  
+  .home:hover {
+    color: rgba(255, 255, 255, 0.5450980392);
+}
+.close-icon {
+    margin-left: 150px;
+    position: relative;
+    top: 20px;
+    background-color: black;
+}

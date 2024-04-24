@@ -1,0 +1,79 @@
+// TODO: ==================== GRID CARD ====================
+
+.my_page__card_grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    margin-top: -340px;
+    gap: 15px;
+    animation-name: grid_card;
+    animation-duration: 2s;
+}
+@keyframes grid_card {
+    from {
+        transform: translateY(400px);
+        opacity: 0.1;
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+.my_page__the_card{
+    border-radius: 20px;
+    width: 276px;
+    height: 266px;
+    border-top: 10px solid $yellow;
+    background-color: $bf-fff;
+}
+
+@media only screen and (max-width: 900px) {
+    .my_page__card_grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(276px, 1fr)); /* Kartalar o'lchami va joylashtirishi */
+        justify-content: center; /* Kartalar markazga joylashtiriladi */
+        gap: 15px; /* Kartalar orasidagi bosish */
+    }
+    
+    .my_page__the_card {
+        border-radius: 20px;
+        width: 100%;
+        max-width: 276px; 
+        height: 266px;
+        border-top: 10px solid $yellow;
+        background-color: $bf-fff;
+        margin-bottom: 15px; 
+        margin-left: 60px;
+    }
+    body{
+        background-color: #D7CEC9;
+    }
+}
+.my_page__card_img{
+    width: 70px;
+    height: 70px;
+    margin-left: 40px;
+    margin-top: 50px;
+    animation-name: img_card;
+    animation-duration: 2s;
+}
+@keyframes img_card {
+    0% {transform: rotate(270deg);}
+}
+.my_page__text_cloud{
+    font-size: 24px;
+    font-family: "Roboto Condensed",sans-serif;
+    color: $null-1;
+    font-weight: 400;
+    margin-left: 29px;
+}
+.my_page__text_more{
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1.5px solid #111;
+    color: #111;
+    font-size: 14px;
+    margin-left: 29px;
+}
+.my_page__text_more:hover{
+    color: $yellow;
+}

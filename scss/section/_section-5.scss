@@ -1,0 +1,177 @@
+.number5-client {
+    background-image: url(https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/74cba0b889ac55bdb591694b/nn.jpg);
+    background-color: #fff;
+    height: 890px;
+    // width: 1510px;
+    width: 100%;
+    margin-top: 0px;
+    background-size: 100%;
+    padding-top: 30px;
+  }
+  
+  .number5-client_name h1 {
+    font: 36px Montserrat, sans-serif;
+    position: relative;
+    left: 210px;
+    top: 36px;
+    width: 500px;
+    font-weight: 700;
+  }
+  
+  .number5-client_h1-2 {
+    margin-top: -25px;
+    width: 500px;
+    color: #f5773d !important;
+  }
+  
+  .number5-client_info p {
+    position: relative;
+    left: 360px;
+    word-spacing: 5px;
+    top: 40px;
+    right: -360px;
+    width: 500px;
+    font: 16px "Open Sans", sans-serif;
+    line-height: 1.6;
+  }
+  
+  .number5-client_url {
+    position: relative;
+    left: 360px;
+    top: 70px;
+    width: 500px;
+  }
+  .number5-client_url a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    padding: 1px;
+    color: black;
+  }
+  
+  .number5-client_img {
+    width: 526px;
+    height: 476px;
+    position: relative;
+    left: 760px;
+    top: -320px;
+  }
+  
+  .number5-client_buttons {
+    position: relative;
+    left: -170px;
+    top: -350px;
+    width: 204px;
+    height: 65px;
+    color: white;
+    background-color: black;
+    border-radius: 12px;
+    border: none;
+  }
+  
+  .number5-client_buttons:hover {
+    background-color: #f5773d !important;
+    cursor: pointer;
+    transition: 0.1s;
+  }
+  
+  @media (max-width: 1227px) {
+    p {
+      left: 260px !important;
+      line-height: 2.1 !important;
+    }
+    .number5-client_name h1 {
+      left: 150px;
+    }
+    .number5-client_img {
+      left: 660px;
+    }
+    .number5-client_url p {
+      position: relative;
+      left: -100px !important;
+    }
+    .number5-client * {
+      margin-left: -50px !important;
+    }
+    .number5-client {
+      height: 1100px;
+      width: 1167px;
+    }
+    .number5-client_buttons {
+      position: relative;
+      top: -345px !important;
+      left: -267px !important;
+    }
+  }
+  @media (max-width: 1227px) {
+    .number5-client {
+      height: 650px;
+    }
+    .number5-client_url a {
+      margin-left: 5px !important;
+    }
+    .number5-client {
+      width: 1277px !important;
+    }
+  }
+  @media (max-width: 732px) {
+    .number5-client_img {
+      margin-left: -120px !important;
+    }
+    .number5-client_buttons {
+      margin-left: 100px !important;
+    }
+    .number5-client_url a {
+      margin-left: 1px;
+    }
+    .number5-client * {
+      margin-left: -60px;
+    }
+  }
+  @media (max-width: 658px) {
+    .number5-client .number5-client_name, .number5-client_info, .number5-client_url, .number5-client_buttons {
+      left: 500px !important;
+      position: relative;
+    }
+    .number5-client_name .number5-client_h1-2 {
+      top: 0;
+    }
+    .number5-client_name h1 {
+      font-size: 70px;
+      width: -moz-max-content !important;
+      width: max-content !important;
+      width: 600px;
+    }
+    .number5-client_buttons {
+      width: 390px;
+      height: 140px;
+      font: 35px "Open Sans", sans-serif;
+      font-weight: 550;
+      left: 544px !important;
+      top: -1220px !important;
+    }
+    .number5-client_img {
+      width: 1200px;
+      height: auto;
+      margin-top: 150px;
+      margin-left: 300px !important;
+      position: static;
+    }
+    .number5-client_info p {
+      width: -moz-max-content;
+      width: max-content;
+      font-size: 33px;
+    }
+    .number5-client_url p {
+      left: 257px !important;
+      top: -22px;
+      font-size: 33px;
+    }
+    .number5-client_url a {
+      position: relative;
+      left: 6px !important;
+    }
+    .number5-client {
+      height: 2220px;
+      padding-right: 500px;
+    }
+  }/*# sourceMappingURL=style.css.map */

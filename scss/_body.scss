@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat,sans-serif;
+}
+
+// TODO:=============== decaration's ==================
+
+*::selection{
+    background-color: #f5773d;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f5773d;
+    border-radius: 6px;
+}

@@ -1,0 +1,153 @@
+$our: #f5773d;
+$text-col: #ffff;
+$text-size: 20px;
+$transition-time: 0.5s;
+$text-size: 20px; // Kichik yozuvning o'lchami
+$transition-time: 0.5s; // Animatsiya uchun o'tish vaqtini belgilash
+.card{
+    font-size: $text-size;
+    transition: font-size $transition-time ease-in-out;
+}
+
+.card:hover {
+    font-size: $text-size * 1.2;
+}
+
+section{
+    background-color: black;
+}
+
+.u-text p{
+    color: $our;
+    text-align: center;
+    font-size: 80px;
+    font-family: Montserrat, sans-serif;
+}
+
+.card{
+    width: 300px;
+}
+
+.card h1{
+    font-size: 50px;
+    @keyframes card_year {
+      0% {transform: rotate(270deg);}
+  }
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+}
+
+.text{
+    color: $text-col;
+    width: 280px;
+}
+
+.our-text p{
+    color: $text-col;
+    font-weight: 10%;
+    text-align: center;
+}
+
+.icon img{
+    width: 60px;
+    height: 60px;
+}
+
+.year{
+    color:  rgb(255, 255, 255);
+}
+
+
+@keyframes slideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .u-text {
+    animation: slideDown 1s ease;
+  }
+  
+  @keyframes scaleInOut {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .our-text {
+    animation: scaleInOut 1s ease;
+  }
+  
+
+@keyframes slideOut {
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+  }
+  
+  .cards {
+    animation: slideOut 1s ease forwards;
+  }
+  
+
+@media only screen and (max-width: 600px) {
+    .u-text p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .icon img {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .our-text p {
+        font-size: 20px;
+    }
+}
+
+/* Kichik ekranlar uchun stil */
+@media only screen and (max-width: 600px) {
+    .cards {
+        grid-template-columns: auto;
+    }
+}
+
+/* O'rta ekranlar uchun stil */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    .cards {
+        grid-template-columns: auto auto;
+    }
+}
+
+/* Katta ekranlar uchun stil */
+@media only screen and (min-width: 900px) {
+    .cards {
+        grid-template-columns: auto auto auto auto;
+    }
+}
